@@ -1,3 +1,4 @@
+/* variable */
 :root {
     --primary-color: rgb(68, 224, 68);
     --secondary-color: #260f5c;
@@ -6,15 +7,19 @@
 body{
     font-family:  Helvetica, Arial, sans-serif;
 }
+/* section title styles */
 .section-title {
     font-size: 48px;
     color: var(--secondary-color);
-    border-bottom: 3px solid;
+    border-right: 3px solid;
     padding-bottom: 20px;
     text-align: center;
-    margin: 0 auto 35px auto;
+    margin: 30px auto 35px auto;
     width: 50%;
+   
 }
+/* header style start*/
+/* sets header style and allows the background image to match with the hero*/
 header {
     padding: 20px 35px;
     display: flex;
@@ -29,6 +34,7 @@ header {
     background-attachment: fixed;
     z-index: 9999;
 }
+
 header h1{
     font-weight: bold;
     font-size: 36px;
@@ -43,6 +49,7 @@ header a {
 header nav {
     margin:7px 0;
 }
+/* aligns nav elements */
 header nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -56,12 +63,16 @@ header nav ul li a {
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+/* makes nav elements stand out when hovered */
 header nav ul li a:hover {
     background: var(--primary-color);
     color: var(--secondary-color);
     border-radius: 15px;
     text-shadow: none;
   }
+  /* header style end */
+  /* hero style start */
+  /* set hero background and make it match with the header */
   .hero {
     background-image: url("../images/hero-image.jpg");
     background-size: cover;
@@ -73,9 +84,22 @@ header nav ul li a:hover {
     background-attachment: fixed;
     height: 300px;
   }
+
   .hero h2 {
       color: var(--tertiary-color);
       font-style:italic;
     font-size: 55px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
+  .about-me {
+      display: flex;
+  }
+  .about-me p {
+      padding: 30px;
+      width: 300px;
+      flex: 1 1 90%;
+  }
+  .work {
+      display: flex;
+  }
+  .
