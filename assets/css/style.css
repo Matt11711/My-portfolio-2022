@@ -34,7 +34,7 @@ header {
     background-attachment: fixed;
     z-index: 9999;
 }
-
+/* styles header and lets the text and headshot be flexible */
 header h1{
     font-weight: bold;
     font-size: 36px;
@@ -44,12 +44,13 @@ header h1{
     display: flex;
     
 }
+/* removes standard anchor element formatting and styles it */
 header a {
     text-decoration: none;
     color: var(--primary-color);
 }
+/* makes headshot image same size as text */
 header img {
-    /* height: auto; */
     width: 5vh;
     padding-left: 5px;
 }
@@ -79,7 +80,7 @@ header nav ul li a:hover {
   }
   /* header style end */
   /* hero style start */
-  /* set hero background and make it match with the header */
+  /* set hero background and make it match with the header. moves subtitle to bottom right. */
   .hero {
     background-image: url("../images/hero-image.jpg");
     background-size: cover;
@@ -91,19 +92,22 @@ header nav ul li a:hover {
     background-attachment: fixed;
     height: 300px;
   }
-
+/* subtitle style */
   .hero h2 {
       color: var(--tertiary-color);
       font-style:italic;
     font-size: 55px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
+  /* about me styles */
+  /* setting container so heading title can be on the side */
   .about-me {
       display: flex;
       width: 100%;
       margin: 0 auto;
       justify-content: space-around;
   }
+  /* these next two rules set the division for section title and content */
   .about-me .section-title {
       width: 25%;
       flex: 1;
@@ -113,6 +117,8 @@ header nav ul li a:hover {
       width: 75%;
       flex: 3;
   }
+  /* work styles */
+  /* like above, sets container to have subheading on the side */
   .work {
       display: flex;
       height: auto;
@@ -121,10 +127,12 @@ header nav ul li a:hover {
       justify-content: space-around;
       position: relative;
   }
+  /* again, sets the division for content and heading */
   .work .section-title {
      flex: 1;
      width: 25%;
   }
+  /* sets content division again, but also allows the card containers to be flexible */
   .project-cards {
       
       display: flex;
@@ -137,7 +145,7 @@ header nav ul li a:hover {
      position: relative;
      height: 100%;
   }
-
+/* gives my link a background image and size */
     .large-card {
         background-image: url(../images/Run_buddy_screenshot.PNG);
         position: relative;
@@ -149,11 +157,7 @@ header nav ul li a:hover {
         display: flex;
         flex-wrap: wrap;
     }
-     .large-card img {
-        width: 100%;
-        height: 100%;
-        background-color: var(--background-opacity);
-    } 
+    /* sets card boxes that are inside the project images */
     .card-text {
         width: auto;
         color: var(--primary-color);
@@ -161,10 +165,17 @@ header nav ul li a:hover {
         bottom: 10px;
         left: 10px;
         background-color: var(--secondary-color);
-
     }
-        
-    
+    /* just a container to keep the different card sizes from having wrapping issues */
+    .small-cards {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+        width: 100%;
+        justify-content: space-between;
+    }    
+    /* stlyes the cards and gives them a size */
     .card {
         position: relative;
         width: 49.5%;
@@ -176,18 +187,7 @@ header nav ul li a:hover {
         background-size: cover;
     
     }
-    .small-cards {
-        position: relative;
-        display: flex;
-        flex-wrap: wrap;
-        height: 100%;
-        width: 100%;
-        justify-content: space-between;
-    }
-    .small-cards img {
-        width: 100%;
-        height: 100%;
-    }
+    /* these next 4 rules have the specific background images for each project card */
     #card-1 {
         background-image: url("../images/Card-placeholder-1.jpg");
     background-size: cover;
@@ -202,6 +202,8 @@ header nav ul li a:hover {
     #card-4 {
         background-image: url("../images/Card-placeholder-4.jpg");
     }
+    /* contact me styles */
+    /* sets the container for the sub-heading again */
     .contact-me {
         display: flex;
         height: auto;
@@ -211,10 +213,12 @@ header nav ul li a:hover {
         position: relative;
         flex-wrap: wrap;
     }
+    /* setting content divider one last time */
     .contact-me .section-title {
         flex: 1;
      width: 25%;
     }
+    /* sets content divider and makes container for contact info */
     .contact-info {
         width: 75%;
         display: flex;
@@ -225,13 +229,93 @@ header nav ul li a:hover {
         margin: 0 auto;
      flex: 3;
     }
+    /* styles for contact text */
     .contact-type {
         color: var(--primary-color);
         border-bottom: solid var(--secondary-color);
         font-weight: bold;
     }
+    /* styles hyperlink text */
     .contact-type a {
         text-decoration: none;
         color: var(--primary-color);
     }
+    /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    } 
+ 
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+ 
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    header nav ul li a {
+        font-size: 20px;
+    }
     
+
+    .section-title {
+        width: 15%;
+    }
+    .trainer {
+        flex: 0 70%;
+    }
+    
+ }
+ /* MEDIA QUERY FOR TABLETS AND SMALLER */
+ @media screen and (max-width: 768px) {
+    section { 
+        padding: 30px 15px;
+    }
+    .step h3 {
+        flex:  1 100%;
+        text-align: center;
+    }
+    .step-info {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    .step-img {
+         flex: 0 32%;
+         margin-right: 0;
+         margin-top: 15px;
+         margin-bottom: 15px;
+    }
+    .step-text {
+        flex: 100%;
+    }
+ }
+ /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+ @media screen and (max-width: 575px) {
+    .hero-form button {
+        width: 100%;
+    }
+    .section-title {
+        width: 95%;
+    }
+    .intro p {
+        width: 100%;
+    }
+    .trainer {
+        flex: 0 100%;
+    }
+    .contact-info {
+        text-align: center;
+    }
+    .contact-info > * {
+        flex: 0 100%;
+    }
+    .contact-form {
+        order: 3;
+    }
+ }
