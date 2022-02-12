@@ -2,7 +2,13 @@
 ![Screenshot](./assets/images/screenshot.PNG)
 
 ## Purpose
-Portfolio to showcase projects that I have worked on
+Portfolio to showcase projects that I have worked on. 
+
+## Features
+* Clickable project cards with links to deployed projects
+* Elements should rearrange to be more readable on smaller screens, using media queries
+* Header element contains nav with links to main sections of the page
+* Contact links
 
 ## Built with
 * HTML
@@ -14,4 +20,3 @@ https://matt11711.github.io/my-portfolio-2022/
 ## Contribution
 Made with ❤️ by Matt11711
 
-### ©️2019 Run Buddy, Inc

@@ -1,318 +1,312 @@
 /* variable */
 :root {
-    --primary-color: rgb(68, 224, 68);
-    --secondary-color: #260f5c;
-    --tertiary-color: rgb(236, 236, 41);
-  }
-body{
-    font-family:  Helvetica, Arial, sans-serif;
+  --primary-color: rgb(68, 224, 68);
+  --secondary-color: #260f5c;
+  --tertiary-color: rgb(236, 236, 41);
+}
+body {
+  font-family: Helvetica, Arial, sans-serif;
 }
 /* section title styles */
 .section-title {
-    font-size: 48px;
-    color: var(--secondary-color);
-    border-right: 3px solid;
-    padding-bottom: 20px;
-    text-align: center;
-    margin: 30px auto 35px auto;
-    width: 50%;
-   
+  font-size: 48px;
+  color: var(--secondary-color);
+  border-right: 3px solid;
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 30px auto 35px auto;
+  width: 50%;
 }
 /* header style start*/
 /* sets header style and allows the background image to match with the hero*/
 header {
-    padding: 20px 35px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    background-image: url("../images/hero-image.jpg"); 
-    background-size: cover;
-    background-position: 80%;
-    background-attachment: fixed;
-    z-index: 9999;
+  padding: 20px 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-image: url("../images/hero-image.jpg");
+  background-size: cover;
+  background-position: 80%;
+  background-attachment: fixed;
+  z-index: 9999;
 }
 /* styles header and lets the text and headshot be flexible */
-header h1{
-    font-weight: bold;
-    font-size: 36px;
-    color: var(--primary-color);
-    margin: 0;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    display: flex;
-    
+header h1 {
+  font-weight: bold;
+  font-size: 36px;
+  color: var(--primary-color);
+  margin: 0;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
 }
 /* removes standard anchor element formatting and styles it */
 header a {
-    text-decoration: none;
-    color: var(--primary-color);
+  text-decoration: none;
+  color: var(--primary-color);
 }
 /* makes headshot image same size as text */
 header img {
-    width: 5vh;
-    padding-left: 5px;
+  width: 5vh;
+  padding-left: 5px;
 }
 header nav {
-    margin:7px 0;
+  margin: 7px 0;
 }
 /* aligns nav elements */
 header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
 }
 header nav ul li a {
-    padding: 10px 15px;
-    font-weight: lighter;
-    font-size: 1.55vw;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 /* makes nav elements stand out when hovered */
 header nav ul li a:hover {
-    background: var(--primary-color);
-    color: var(--secondary-color);
-    border-radius: 15px;
-    text-shadow: none;
-  }
-  /* header style end */
-  /* hero style start */
-  /* set hero background and make it match with the header. moves subtitle to bottom right. */
-  .hero {
-    background-image: url("../images/hero-image.jpg");
-    background-size: cover;
-    background-position: 80%;
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    background-attachment: fixed;
-    height: 300px;
-  }
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 15px;
+  text-shadow: none;
+}
+/* header style end */
+/* hero style start */
+/* set hero background and make it match with the header. moves subtitle to bottom right. */
+.hero {
+  background-image: url("../images/hero-image.jpg");
+  background-size: cover;
+  background-position: 80%;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  background-attachment: fixed;
+  height: 300px;
+}
 /* subtitle style */
-  .hero h2 {
-      color: var(--tertiary-color);
-      font-style:italic;
-    font-size: 55px;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
-  /* about me styles */
-  /* setting container so heading title can be on the side */
-  .about-me {
-      display: flex;
-      width: 100%;
-      margin: 0 auto;
-      justify-content: space-around;
-  }
-  /* these next two rules set the division for section title and content */
-  .about-me .section-title {
-      width: 25%;
-      flex: 1;
-  }
-  .about-me p {
-      padding: 30px;
-      width: 75%;
-      flex: 3;
-  }
-  /* work styles */
-  /* like above, sets container to have subheading on the side */
-  .work {
-      display: flex;
-      height: auto;
-      width: 100%;
-      margin: 0 auto;
-      justify-content: space-around;
-      position: relative;
-  }
-  /* again, sets the division for content and heading */
-  .work .section-title {
-     flex: 1;
-     width: 25%;
-  }
-  /* sets content division again, but also allows the card containers to be flexible */
-  .project-cards {
-      
-      display: flex;
-    padding: 30px;
-      margin: 0 auto ;
-      justify-content: space-between;
-      width: 75%;
-     flex: 3;
-      flex-wrap: wrap;
-     position: relative;
-     height: 100%;
-  }
+.hero h2 {
+  color: var(--tertiary-color);
+  font-style: italic;
+  font-size: 55px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+/* about me styles */
+/* setting container so heading title can be on the side */
+.about-me {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+/* these next two rules set the division for section title and content */
+.about-me .section-title {
+  width: 25%;
+  flex: 1;
+}
+.about-me p {
+  padding: 30px;
+  width: 75%;
+  flex: 3;
+}
+/* work styles */
+/* like above, sets container to have subheading on the side */
+.work {
+  display: flex;
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-around;
+  position: relative;
+}
+/* again, sets the division for content and heading */
+.work .section-title {
+  flex: 1;
+  width: 25%;
+}
+/* sets content division again, but also allows the card containers to be flexible */
+.project-cards {
+  display: flex;
+  padding: 30px;
+  margin: 0 auto;
+  justify-content: space-between;
+  width: 75%;
+  flex: 3;
+  flex-wrap: wrap;
+  position: relative;
+  height: 100%;
+}
 /* gives my link a background image and size */
-    .large-card {
-        background-image: url(../images/Run_buddy_screenshot.PNG);
-        position: relative;
-        background-size: cover;
-        background-position: right;
-        width: 75vw;
-        height: 60vh;
-        border: 4px solid var(--secondary-color);
-        margin: 10px auto;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    /* sets card boxes that are inside the project images */
-    .card-text {
-        width: auto;
-        color: var(--primary-color);
-        position: absolute;
-        bottom: 10px;
-        left: 10px;
-        background-color: var(--secondary-color);
-    }
-    /* just a container to keep the different card sizes from having wrapping issues */
-    .small-cards {
-        position: relative;
-        display: flex;
-        flex-wrap: wrap;
-        height: 100%;
-        width: 100%;
-        justify-content: space-between;
-    }    
-    /* stlyes the cards and gives them a size */
-    .card {
-        position: relative;
-        width: 49.5%;
-        height: 20vh;
-        border: 4px solid var(--secondary-color);
-        margin: 10px auto;
-        display: flex;
-        flex-wrap: wrap;
-        background-size: cover;
-    
-    }
-    /* these next 4 rules have the specific background images for each project card */
-    #card-1 {
-        background-image: url("../images/Card-placeholder-1.jpg");
-    background-size: cover;
-    
-    }
-    #card-2 {
-        background-image: url("../images/Card-placeholder-2.jpg");
+.large-card {
+  background-image: url(../images/Run_buddy_screenshot.PNG);
+  position: relative;
+  background-size: cover;
+  background-position: right;
+  width: 75vw;
+  height: 60vh;
+  border: 4px solid var(--secondary-color);
+  margin: 10px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* sets card boxes that are inside the project images */
+.card-text {
+  width: auto;
+  color: var(--primary-color);
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: var(--secondary-color);
+}
+/* just a container to keep the different card sizes from having wrapping issues */
+.small-cards {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+}
+/* stlyes the cards and gives them a size */
+.card {
+  position: relative;
+  width: 49.5%;
+  height: 20vh;
+  border: 4px solid var(--secondary-color);
+  margin: 10px auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-size: cover;
+}
+/* these next 4 rules have the specific background images for each project card */
+#card-1 {
+  background-image: url("../images/Card-placeholder-1.jpg");
+  background-size: cover;
+}
+#card-2 {
+  background-image: url("../images/Card-placeholder-2.jpg");
+}
+#card-3 {
+  background-image: url("../images/Card-placeholder-3.jpg");
+}
+#card-4 {
+  background-image: url("../images/Card-placeholder-4.jpg");
+}
+/* contact me styles */
+/* sets the container for the sub-heading again */
+.contact-me {
+  display: flex;
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-around;
+  position: relative;
+  flex-wrap: wrap;
+}
+/* setting content divider one last time */
+.contact-me .section-title {
+  flex: 1;
+  width: 25%;
+}
+/* sets content divider and makes container for contact info */
+.contact-info {
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  margin: 0 auto;
+  flex: 3;
+}
 
-    }#card-3 {
-        background-image: url("../images/Card-placeholder-3.jpg");
-    }
-    #card-4 {
-        background-image: url("../images/Card-placeholder-4.jpg");
-    }
-    /* contact me styles */
-    /* sets the container for the sub-heading again */
-    .contact-me {
-        display: flex;
-        height: auto;
-        width: 100%;
-        margin: 0 auto;
-        justify-content: space-around;
-        position: relative;
-        flex-wrap: wrap;
-    }
-    /* setting content divider one last time */
-    .contact-me .section-title {
-        flex: 1;
-     width: 25%;
-    }
-    /* sets content divider and makes container for contact info */
-    .contact-info {
-        width: 75%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
-        padding: 30px;
-        margin: 0 auto;
-     flex: 3;
-    }
-
-    /* styles for contact text */
-    .contact-type {
-        color: var(--primary-color);
-        border-bottom: solid 1px var(--secondary-color);
-        font-weight: bold;
-    }
-    /* styles hyperlink text */
-    .contact-type a {
-        text-decoration: none;
-        color: var(--primary-color);
-    }
-    /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+/* styles for contact text */
+.contact-type {
+  color: var(--primary-color);
+  border-bottom: solid 1px var(--secondary-color);
+  font-weight: bold;
+}
+/* styles hyperlink text */
+.contact-type a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
-    header {
-        padding-bottom: 0;
-        justify-content: center;
-        position: relative;
-        display: flex;
-    } 
- 
-    header h1 {
-        width: 100%;
-        text-align: center;
-    }
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+    display: flex;
+  }
 
- 
-    header nav ul {
-        margin-top: 20px;
-        width: 100%;
-        justify-content: center;
-    }
-    header nav ul li a {
-        font-size: 20px;
-    }
-    
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
 
-    .section-title {
-        width: 15%;
-    }
-    .project-cards, .contact-info {
-        width: 100%;
-    }
-    header {
-        justify-content: flex-start;
-        
-    }
- }
- /* MEDIA QUERY FOR TABLETS AND SMALLER */
- @media screen and (max-width: 768px) {
-    .large-card {
-        background-position: center;
-    }
-    section { 
-        padding: 30px 15px;
-    }
-    .work, .about-me, .contact-me {
-        flex-flow: column;
-        flex-wrap: nowrap;
-        align-items: center;
-    }
-    .section-title {
-        font-size: 20px;
-        border-bottom: 4px solid var(--secondary-color);
-        border-right: none;
-    }
-   .card {
-       width: 90vw;
-   }
-    .card-text {
-        font-size: 12px;
-    }
-    .hero h2 {
-        font-size: 35px;
-    }
-   
- }
- /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
- @media screen and (max-width: 575px) {
-    .section-title {
-        width: 95%;
-    }
-    body {
-        padding: 0;
-    }
- }
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  .section-title {
+    width: 15%;
+  }
+  .project-cards,
+  .contact-info {
+    width: 100%;
+  }
+  header {
+    justify-content: flex-start;
+  }
+}
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  .large-card {
+    background-position: center;
+  }
+  section {
+    padding: 30px 15px;
+  }
+  .work,
+  .about-me,
+  .contact-me {
+    flex-flow: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .section-title {
+    font-size: 20px;
+    border-bottom: 4px solid var(--secondary-color);
+    border-right: none;
+  }
+  .card {
+    width: 90vw;
+  }
+  .card-text {
+    font-size: 12px;
+  }
+  .hero h2 {
+    font-size: 35px;
+  }
+}
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  .section-title {
+    width: 95%;
+  }
+  body {
+    padding: 0;
+  }
+}
