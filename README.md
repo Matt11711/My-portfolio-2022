@@ -15,7 +15,7 @@ Portfolio to showcase projects that I have worked on.
 * CSS
 
 ## Website 
-https://matt11711.github.io/my-portfolio-2022/
+https://matt11711.github.io/My-portfolio-2022/
 
 ## Contribution
 Made with ❤️ by Matt11711
