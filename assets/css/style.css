@@ -293,6 +293,7 @@ header nav ul li a:hover {
   }
   .card {
     width: 90vw;
+    background-position: center;
   }
   .card-text {
     font-size: 12px;
