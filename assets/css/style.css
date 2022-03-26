@@ -144,7 +144,7 @@ header nav ul li a:hover {
 }
 /* gives my link a background image and size */
 .large-card {
-  background-image: url(../images/Run_buddy_screenshot.PNG);
+  background-image: url('../images/Shooting_Star_Screenshot.PNG');
   position: relative;
   background-size: cover;
   background-position: right;
@@ -186,7 +186,7 @@ header nav ul li a:hover {
 }
 /* these next 4 rules have the specific background images for each project card */
 #card-1 {
-  background-image: url("../images/Card-placeholder-1.jpg");
+  background-image: url("../images/Run_buddy_screenshot.PNG");
   background-size: cover;
 }
 #card-2 {
