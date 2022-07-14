@@ -144,7 +144,7 @@ header nav ul li a:hover {
 }
 /* gives my link a background image and size */
 .large-card {
-  background-image: url('../images/it-takes-a-city-screenshot.PNG');
+  background-image: url('../images/ItTakesACity.PNG');
   position: relative;
   background-size: cover;
   background-position: right;
